@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consulta de CEP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container mt-3">
+        <h1 class="text-center">Consulta de CEP</h1>
+    
+        <form action="" method="" class="border p-3 mx-auto mw-50">
+            <div class="d-flex gap-4">
+                <div class="mb-3 col">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" id="cep" name="cep" class="form-control" minlength="0" maxlength="9">
+                </div>
+                <div class="mb-3 col">
+                    <label for="log" class="form-label">Rua</label>
+                    <input type="text" id="log" name="log" class="form-control" readonly>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" id="bairro" name="bairro" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="local" class="form-label">Localidade</label>
+                <input type="text" id="local" name="local" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="uf" class="form-label">UF</label>
+                <input type="text" id="uf" name="uf" class="form-control" readonly>
+            </div>
+            <div class="mb-3">
+                <button type="button" id="btnCheck" class="btn btn-primary ">Verificar CEP</button>
+                <button type="reset" class="btn btn-secondary ">Limpar campos</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

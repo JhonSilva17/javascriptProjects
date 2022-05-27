@@ -1,0 +1,75 @@
+:root {
+    font-size: 62.5%;
+    --hue: 212;
+    --primary-color: hsl(var(--hue), 100%, 74%);
+    --second-color:  hsl(var(--hue), 100%, 65%);
+    --bg-color: hsl(var(--hue), 100%, 96%);
+    --title-color: hsl(var(--hue), 65%, 25%);
+    --text-color: hsl(var(--hue), 45%, 33%);
+    --white: hsl(var(--hue), 0%, 100%);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    background: var(--bg-color);
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font: normal 700 2.6rem/1 'Montserrat', sans-serif;
+    color: var(--title-color);
+}
+
+.advices {
+    background: var(--white);
+    border-radius: .4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 380px;
+    height: 120px;
+    padding: 2rem;
+    margin: 2rem 0 3.2rem;
+}
+
+#advice {
+    font: italic 400 1.6rem/1.35 'Tiro Devanagari Hindi', serif;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 560px) {
+    .advices {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    #advice {
+        font-size: 1.4rem;
+    }
+}
+
+button {
+    border: none;
+    font: normal 500 1.6rem 'Montserrat', sans-serif;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--second-color);
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+}
